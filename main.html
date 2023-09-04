@@ -1,16 +1,52 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Layout</title>
+    <style>
+        /* Container styles */
+        .container {
+            width: 300px; /* Specific width for the container */
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 20px; /* Padding for the container */
+            border: 2px solid #333; /* Rounded border for the container */
+            border-radius: 15px; /* Rounded corners */
+            text-align: center; /* Center align text inside the container */
+	        background-color:#D3D3D3;
+			display:flex;
+			align-items:center;
+		}
+
+        /* Circular block styles */
+        .circle {
+            width: 100px; /* Specific width and height for the circular block */
+            height: 100px;
+            border-radius: 50%; /* Make it a circle */
+            display: inline-block; /* Display blocks inline */
+            margin: 10px; /* Spacing between blocks */
+        }
+
+        /* Color styles for the circular blocks */
+        .red {
+            background-color: #FF5733; /* Red color */
+        }
+
+        .green {
+            background-color: #33FF49; /* Green color */
+        }
+
+        .yellow {
+            background-color: #FFFC33; /* Yellow color */
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="container">
+        <div class="circle green"></div>
+		 <div class="circle yellow"></div>
+		<div class="circle red"></div>
+		
+    </div>
 </body>
-
 </html>
